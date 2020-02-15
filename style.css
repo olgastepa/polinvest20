@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root {
+    --main-dark-green: #122222;
+    --main-beige: #F0CEA0;
+  }
+
+.intro-container {
+    background-color: var(--main-dark-green);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 300px;
+    height: 300px;
+}
