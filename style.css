@@ -8,6 +8,9 @@
     --main-beige: #F0CEA0;
   }
 
+ body {
+     margin: 0;
+ }
 .intro-container {
     background-color: var(--main-dark-green);
     width: 100vw;
