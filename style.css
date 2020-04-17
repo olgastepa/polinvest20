@@ -135,6 +135,9 @@
 
 
 /*CONTACT PAGE*/
+.message {
+    text-align: center;
+}
 .contact-page {
     background-image: url(assets/contact-image.jpg);
 }
