@@ -5,16 +5,212 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Exmouth' rel='stylesheet'>
-    <title></title>
+    <link href='assets/шрифт/Lora-Bold.ttf' rel='stylesheet'>
+    <link href='assets/шрифт/Lora-BoldItalic.ttf' rel='stylesheet'>
+    <link href='assets/шрифт/Lora-Italic.ttf' rel='stylesheet'>
+    <link href='assets/шрифт/Lora-Regular.ttf' rel='stylesheet'>
+    <title>Главная</title>
 </head>
 <body>
-    <div class="intro-container">
-        <img src="assets/logo.svg" alt="" class="logo">
-        <h1>website is under construction</h1>
-        <h1>we will come back soon</h1>
+  <div class="nav-section">
+    <img src="assets/logo.svg" alt="" class="header-logo">
+    <div class="lang-section">
+        <button type="button" class="collapsible">Русский
+            <img src="assets/down-arrow.svg" alt="" class="lang-btn">
+        </button>
+            <div class="content">
+                <ul class="lang-list">
+                    <li class="lang-item"><a href="" class="lang-item">English</a></li>
+                    <li class="lang-item"><a href="" class="lang-item">Български</a></li>
+                </ul>
+            </div>
+    </div>
+</div>
+<nav>   
+<ul class="nav-links">
+<li><a href="index.html" class="activated">Главная</a></li>
+<li><a href="about.html">О компании</a></li>
+<li><a href="financing.html">Финансирование</a></li>
+<li><a href="consulting.html">Консалтинг</a></li>
+<li><a href="instruments.html">Инструменты</a></li>
+<li><a href="contact.html">Контакты</a></li>
+</ul>
+<div class="burger">
+<div class="line1"></div>
+<div class="line2"></div>
+<div class="line3"></div>
+</div>
+</nav>
+
+<div class="intro index-page flex-center">
+    <h1 class="heading-one">"Наш успех  - решение ваших сложных задач в тихой гавани финансов"</h1>
+</div>
+
+<!--
+<div class="line"></div>
+<h2 class="heading-two">Всегда дорого цените свое время</h2>
+
+<div class="clock-container">
+    <div class="clock-box">
+        <h5 class="heading-three">Нью-Йорк</h5>
+        <div id="clockNY"></div>
     </div>
 
+    <div class="clock-box">
+        <h5 class="heading-three">Лондон</h5>
+        <div id="clockLondon"></div>
+    </div>
+
+    <div class="clock-box">
+        <h5 class="heading-three">София</h5>
+        <div id="clockSofia"></div>
+    </div>
+
+    <div class="clock-box">
+        <h5 class="heading-three">Гонконг</h5>
+        <div id="clockHK"></div>
+    </div>
+
+    <div class="clock-box">
+        <h5 class="heading-three">Дубай</h5>
+        <div id="clockDubai"></div>
+    </div>
+ 
+    
+</div>
+
+-->
+
+
+<div class="line"></div>
+<h2 class="heading-two">Наша работа</h2>
+<p class="body-text">Мы поможем нашим клиентам с ориентироваться в просторах мирового финансового океана, в поисках необходимого финансирования проектов и готовы предложить наилучшее решения. Если у вас есть проекты, под которые нужно привлечь выгодное финансирование, «POLINVES 20» LTD может помочь в достижении ваших финансовых целей. Наша команда опытных профессионалов способна помочь Вам запустить новый проект, перевести существующий проект на более высокий уровень и занять более высокие позиции в вашем секторе рынка или помочь преодолеть кризисные падения.</p>
+
+<footer class="flex-center">
+    <img src="assets/logo.svg" alt="" class="footer-logo">
+    <p class="footer-title"><a href="tel:+79111266949" class="footer-title">+7-911-126-69-49</a></p>
+    <p class="footer-title"><a href="mailto:polinvest20.ltd@gmail.com" class="footer-title">polinvest20.ltd@gmail.com</a></p>
+    <p class="footer-title">Kolio Ficheto 7A,  209, Plovdiv 4018, Bulgaria</p>
+</footer>
+<script src="nav.js"></script>
 </body>
 </html>
+
+<script>
+    function currentTime() {
+      var date = new Date(); /* creating object of Date class */
+      var hour = date.getHours();
+      var min = date.getMinutes();
+      hour = updateTime(hour);
+      min = updateTime(min);
+      document.getElementById("clockNY").innerText = hour + " : " + min; /* adding time to the div */
+        var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
+    }
+    
+    function updateTime(k) {
+      if (k < 10) {
+        return "0" + k;
+      }
+      else {
+        return k;
+      }
+    }
+    
+    
+    currentTime(); /* calling currentTime() function to initiate the process */
+  </script>
+    
+    <script>
+        function currentTime() {
+          var date = new Date(); /* creating object of Date class */
+          var hour = date.getHours();
+          var min = date.getMinutes();
+          var sec = date.getSeconds();
+          hour = updateTime(hour);
+          min = updateTime(min);
+          document.getElementById("clockLondon").innerText = hour + " : " + min; /* adding time to the div */
+            var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
+        }
+        
+        function updateTime(k) {
+          if (k < 10) {
+            return "0" + k;
+          }
+          else {
+            return k;
+          }
+        }
+        
+        currentTime(); /* calling currentTime() function to initiate the process */
+        </script>
+    
+    <script>
+        function currentTime() {
+          var date = new Date(); /* creating object of Date class */
+          var hour = date.getHours();
+          var min = date.getMinutes();
+          var sec = date.getSeconds();
+          hour = updateTime(hour);
+          min = updateTime(min);
+          document.getElementById("clockSofia").innerText = hour + " : " + min; /* adding time to the div */
+            var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
+        }
+        
+        function updateTime(k) {
+          if (k < 10) {
+            return "0" + k;
+          }
+          else {
+            return k;
+          }
+        }
+        
+        currentTime(); /* calling currentTime() function to initiate the process */
+        </script>
+    <script>
+        function currentTime() {
+          var date = new Date(); /* creating object of Date class */
+          var hour = date.getHours();
+          var min = date.getMinutes();
+          var sec = date.getSeconds();
+          hour = updateTime(hour);
+          min = updateTime(min);
+          document.getElementById("clockHK").innerText = hour + " : " + min; /* adding time to the div */
+            var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
+        }
+        
+        function updateTime(k) {
+          if (k < 10) {
+            return "0" + k;
+          }
+          else {
+            return k;
+          }
+        }
+        
+        currentTime(); /* calling currentTime() function to initiate the process */
+        </script>
+
+<script>
+    function currentTime() {
+      var date = new Date(); /* creating object of Date class */
+      var hour = date.getHours();
+      var min = date.getMinutes();
+      var sec = date.getSeconds();
+      hour = updateTime(hour);
+      min = updateTime(min);
+      document.getElementById("clockDubai").innerText = hour + " : " + min; /* adding time to the div */
+        var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
+    }
+    
+    function updateTime(k) {
+      if (k < 10) {
+        return "0" + k;
+      }
+      else {
+        return k;
+      }
+    }
+    
+    currentTime(); /* calling currentTime() function to initiate the process */
+    </script>
