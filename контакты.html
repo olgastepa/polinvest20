@@ -20,7 +20,7 @@
                     </button>
                         <div class="content">
                             <ul class="lang-list">
-                                <li class="lang-item"><a href="" class="lang-item">English</a></li>
+                                <li class="lang-item"><a href="contact.html" class="lang-item">English</a></li>
                                 <li class="lang-item"><a href="" class="lang-item">Български</a></li>
                             </ul>
                         </div>
@@ -28,12 +28,12 @@
             </div>
             <nav>   
             <ul class="nav-links">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="about.html">О компании</a></li>
-            <li><a href="financing.html">Финансирование</a></li>
-            <li><a href="consulting.html">Консалтинг</a></li>
-            <li><a href="instruments.html">Инструменты</a></li>
-            <li><a href="contact.html" class="activated">Контакты</a></li>
+            <li><a href="главная.html">Главная</a></li>
+            <li><a href="онас.html">О компании</a></li>
+            <li><a href="финансирование.html">Финансирование</a></li>
+            <li><a href="консалтинг.html">Консалтинг</a></li>
+            <li><a href="инструменты.html">Инструменты</a></li>
+            <li><a href="контакты.html" class="activated">Контакты</a></li>
             </ul>
             <div class="burger">
             <div class="line1"></div>
@@ -73,8 +73,26 @@
 </div>
 <div class="line"></div>
 <h2 class="heading-two">Задать вопрос</h2>
+<form action="https://formspree.io/polinvest20.ltd@gmail.com" method="POST">
+    <input type="text" id="fname" name="firstname" placeholder="Имя">
 
-<p class="body-text message">Thank you for your message! We will reply as soon as possible.</p>
+    <input type="text" id="lname" name="lastname" placeholder="Фамилия">
+
+    <input type="text" id="company" name="firstname" placeholder="Компания">
+
+    <input type="text" id="email" name="email" placeholder="Email">
+    
+    <input type="text" id="telNo" name="telNo" placeholder="Телефон">
+
+    <input type="text" id="country" name="firstname" placeholder="Страна">
+
+    <textarea id="subject" name="subject" placeholder="Сообщение" style="height:130px"></textarea>
+
+    <input type="hidden" name="_next" value="https://polinvest20.com/спасибо" />
+    <input type="text" name="_gotcha" style="display:none" />
+
+    <input type="submit" value="отправить" class="form-button">
+  </form>
 
   <footer class="flex-center">
     <img src="assets/logo.svg" alt="" class="footer-logo">
