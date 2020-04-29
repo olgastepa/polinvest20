@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="bg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,31 +9,31 @@
     <link href='assets/шрифт/Lora-BoldItalic.ttf' rel='stylesheet'>
     <link href='assets/шрифт/Lora-Italic.ttf' rel='stylesheet'>
     <link href='assets/шрифт/Lora-Regular.ttf' rel='stylesheet'>
-    <title>Контакты «POLINVES 20» LTD</title>
+    <title>Контакти «POLINVES 20» LTD</title>
 </head>
 <body>
         <div class="nav-section">
                 <img src="assets/logo.svg" alt="" class="header-logo">
                 <div class="lang-section">
-                    <button type="button" class="collapsible">English
+                    <button type="button" class="collapsible">Български
                         <img src="assets/down-arrow.svg" alt="" class="lang-btn">
                     </button>
                         <div class="content">
                             <ul class="lang-list">
-                                <li class="lang-item"><a href="спасибо.html" class="lang-item">Русский</a></li>
-                                <li class="lang-item"><a href="" class="lang-item">Български</a></li>
+                                <li class="lang-item"><a href="contact.html" class="lang-item">English</a></li>
+                                <li class="lang-item"><a href="контакты.html" class="lang-item">Русский</a></li>
                             </ul>
                         </div>
                 </div>
             </div>
             <nav>   
             <ul class="nav-links">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="about.html">О компании</a></li>
-            <li><a href="financing.html">Финансирование</a></li>
-            <li><a href="consulting.html">Консалтинг</a></li>
-            <li><a href="instruments.html">Инструменты</a></li>
-            <li><a href="contact.html" class="activated">Контакты</a></li>
+                <li><a href="основен.html">Основен</a></li>
+                <li><a href="Нашите-услуги.html">Нашите услуги</a></li>
+                <li><a href="Нашето-финансиране.html">Нашето финансиране</a></li>
+                <li><a href="Финансови-инструменти.html">Консултации</a></li>
+                <li><a href="Финансови-инструменти.html">Финансови инструменти</a></li>
+                <li><a href="контакт.html" class="activated">Контакти</a></li>
             </ul>
             <div class="burger">
             <div class="line1"></div>
@@ -46,7 +46,7 @@
 </div>
 
 <div class="line"></div>
-<h2 class="heading-two">Наши офисы</h2>
+<h2 class="heading-two">Наши офиси</h2>
 <div class="contact-container flex-center">
     <div class="contact-box">
         <h3 class="heading-four">Болгария</h3>
@@ -73,8 +73,26 @@
 </div>
 <div class="line"></div>
 <h2 class="heading-two">Задать вопрос</h2>
+<form action="https://formspree.io/polinvest20.ltd@gmail.com" method="POST">
+    <input type="text" id="fname" name="firstname" placeholder="Име">
 
-<p class="body-text message">Thank you for your message! We will reply as soon as possible.</p>
+    <input type="text" id="lname" name="lastname" placeholder="Фамилно име">
+
+    <input type="text" id="company" name="firstname" placeholder="Компания">
+
+    <input type="text" id="email" name="email" placeholder="Email">
+    
+    <input type="text" id="telNo" name="telNo" placeholder="Телефонен номер">
+
+    <input type="text" id="country" name="firstname" placeholder="Страна">
+
+    <textarea id="subject" name="subject" placeholder="Съобщение" style="height:130px"></textarea>
+
+    <input type="hidden" name="_next" value="https://polinvest20.com/спасибо" />
+    <input type="text" name="_gotcha" style="display:none" />
+
+    <input type="submit" value="отправить" class="form-button">
+  </form>
 
   <footer class="flex-center">
     <img src="assets/logo.svg" alt="" class="footer-logo">
