@@ -226,7 +226,7 @@ form {
     color: var(--beige);
     margin: auto;
     display: block;
-    width: 130px;
+    width: auto;
     height: 35px; 
     font-size: 14pt;
     font-family: 'Lora';
